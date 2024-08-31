@@ -1,0 +1,181 @@
+/* Reset some default browser styles */
+body, h1, h2, p, video, audio, iframe, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500px;
+}
+    
+}
+
+header {
+    color: #0a0303;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-style: italic;
+    
+}
+
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em; 
+}
+
+
+.intro, .projects, .audio{
+    background-color: #80daae;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    display: flex; /* Enables Flexbox layout */
+    align-items: center; /* Centers content vertically */
+    gap: 20px; /* Adds spacing between the image and text */
+}
+
+.header img {
+    max-width: 50%; /* Limits the image width to half of the section */
+    height: auto;
+    border-radius: 50%;
+    margin-left: auto; 
+    float: right;
+    margin-left: 20px;
+    max-width: 100;/* Aligns image to the right */
+}
+
+/* Projects, audio, and work sections styling */
+.projects, .audio, .work {
+    background-color: #80daae;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adds spacing between these sections */
+}
+
+video {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    border: 1px solid #ddd;
+    border-radius: 12px; 
+    display: block; 
+    margin: 0 auto;
+}
+
+audio {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Slight rounding for audio */
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8%;
+}
+
+picture {
+    float: right;
+    margin-left: 20px;
+    max-width: 100;
+}
+
+footer {
+    color: #0c0303;
+    text-align: center;
+    padding: 1em 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+
+
+@media (min-width: 768px) {
+    main {
+        padding: 3em;
+    }
+
+    .intro {
+        flex-direction: row; 
+    }
+
+    video {
+        max-width: 80%; 
+    }
+
+    .projects, .audio, .work {
+        max-width: 700px; 
+    }
+}
+
+
+@media (min-width: 1024px) {
+    main {
+        padding: 4em;
+    }
+
+    video {
+        max-width: 60%; 
+    }
+
+    .projects, .audio, .work {
+        max-width: 800px; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    main {
+        padding: 1em;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro img {
+        max-width: 100%; /* Full width image on smaller screens */
+        margin: 0; /* Removes auto margin for mobile */
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Smaller font size for headers */
+    }
+
+    header p {
+        font-size: 1em; /* Smaller font size for paragraph */
+    }
+
+    video {
+        max-width: 100%; /* Full width video on smaller screens */
+    }
+
+    .projects, .audio, .work {
+        max-width: 95%; 
+        margin: 0.5em; /* Smaller margin */
+    }
+}

@@ -1,0 +1,169 @@
+/* Basic Styles */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+  }
+  
+  h2, h3 , h4{
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  header, footer {
+    background-color: #c6bbbb;
+    padding: 20px;
+  }
+  
+  nav {
+    text-align: left;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  main, footer {
+    padding: 30px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  .connect {
+    background-color: antiquewhite;
+  }
+  
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumbs li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .breadcrumbs li:last-child {
+    margin-right: 0;
+  }
+  
+  .breadcrumbs a {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #c6bbbb;
+  }
+  
+  /* Responsive Styling */
+  
+  /* Mobile devices (max-width: 767px) */
+  @media (max-width: 767px) {
+    body {
+      padding: 10px;
+    }
+  
+    header, footer {
+      padding: 15px;
+    }
+  
+    nav ul {
+      text-align: center;
+    }
+  
+    nav li {
+      display: block;
+      margin: 10px 0; /* Stack navigation items vertically */
+    }
+  
+    main {
+      padding: 15px;
+    }
+  
+    section {
+      margin-bottom: 15px;
+    }
+  }
+  
+  /* Tablets (min-width: 768px and max-width: 1023px) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    body {
+      padding: 15px;
+    }
+  
+    header, footer {
+      padding: 20px;
+    }
+  
+    nav ul {
+      text-align: left;
+    }
+  
+    nav li {
+      margin: 0 10px;
+    }
+  
+    main {
+      padding: 20px;
+    }
+  
+    section {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Laptops and desktops (min-width: 1024px) */
+  @media (min-width: 1024px) {
+    body {
+      padding: 20px;
+    }
+  
+    header, footer {
+      padding: 30px;
+    }
+  
+    nav ul {
+      text-align: left;
+    }
+  
+    nav li {
+      margin: 0 15px;
+    }
+  
+    main {
+      padding: 30px;
+    }
+  
+    section {
+      margin-bottom: 30px;
+    }
+  }
+  

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proudly Zimbabwean</title>
+    <link rel="stylesheet" href="media.css" />
+    <link rel="icon" href="./favicon-32x32.png" />
+
+    <style>
+      .popover-container {
+        position: relative;
+        display: inline-block;
+        margin-left: 20px;
+      }
+
+      .popover-button {
+        padding: 8px 12px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+
+      .popover {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .popover-container:hover .popover {
+        display: block;
+      }
+
+      .video-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .video-container video {
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body background="./pexels-fwstudio-33348-129731.jpg">
+    <header>
+      <h1>Hello World</h1>
+      <p style="font-family: 'Times New Roman', Times, serif">
+        A brief Into of Who I Am
+      </p>
+    </header>
+
+    <main>
+      <h2>Who Am I?</h2>
+      <section class="intro">
+        <p>
+          Hello! I'm Samkeliso Dube, an aspiring Software engineer from
+          Zimbabwe. <br />
+          I am passionate about building and solving problems.
+        </p>
+
+        <picture>
+          <source
+            media="(max-width: 480px)"
+            srcset="./images.jpeg"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="./images.jpeg"
+          />
+          <img
+            src="./images.jpeg"
+            alt="My profile picture"
+          />
+        </picture>
+      </section>
+
+      <!-- Video element -->
+      <h2>My Hobbies</h2>
+      <section class="hobbies">
+        <p>
+          One of the things I love most is travelling. Recently I had traveled
+          to Victoria Falls:
+        </p>
+        <div class="video-container">
+          <video controls>
+            <source
+              src="./Victoria Falls ｜ Complete Guide to all Viewpoints ｜ Zimbabwe August 2021 ｜ 4K-Video.mp4"
+              type="video/mp4"
+            />
+            <source src="./Victoria Falls ｜ Complete Guide to all Viewpoints ｜ Zimbabwe August 2021 ｜ 4K-Video.mp4 ｜ " type="video/ogg" />
+            <source src="./Victoria Falls ｜ Complete Guide to all Viewpoints ｜ Zimbabwe August 2021 ｜ 4K-Video.mp4 " type="video/webm" />
+          </video>
+          <div class="popover-container">
+            <button class="popover-button">More Info</button>
+            <div id="popover" class="popover">
+              <p>
+                Did you know that Victoria Falls is one of the seven wonders of
+                the world?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Audio element -->
+      <h2>Favorite Tunes</h2>
+      <section class="audio">
+        <p>During my spare time I love tuning in to some music:</p>
+        <audio controls>
+          <source src="./Mavado_-_Father_God__Official_Animated_Lyric_Video_(256k).mp3" type="audio/mpeg" />
+        </audio>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Samkeliso-Dube. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
